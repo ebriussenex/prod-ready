@@ -13,4 +13,5 @@ func main() {
 	r.Get("/hello", h.Hello)
 	err := http.ListenAndServe(":8080", r)
 	log.Fatal(err)
+	log.Print("Shutting down...")
 }
